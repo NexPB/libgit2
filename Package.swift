@@ -145,7 +145,7 @@ let cSettings: [CSetting] = [
     .define("GIT_QSORT_BSD", .when(platforms: applePlatforms)),
 
     // HTTPS via SecureTransport (Apple)
-    .define("GIT_HTTPS_SECURETRANSPORT", to: "1", .when(platforms: applePlatforms)),
+    .define("GIT_SECURE_TRANSPORT", to: "1", .when(platforms: applePlatforms)),
 
     // Hash implementations via CommonCrypto (Apple)
     .define("GIT_SHA1_COMMON_CRYPTO", to: "1", .when(platforms: applePlatforms)),
